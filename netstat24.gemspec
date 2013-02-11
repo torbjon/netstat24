@@ -7,5 +7,5 @@ Gem::Specification.new do |s|
   s.authors     = ["Maksim Berjoza"]
   s.email       = 'maksim.berjoza@gmail.com'
   s.files       = ["lib/netstat24.rb"]
-  s.homepage    = 'http://rubygems.org/gems/netstat24'
+  s.homepage    = "https://github.com/thoughtbot/paperclip"
 end
