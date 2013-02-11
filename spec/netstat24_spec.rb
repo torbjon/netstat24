@@ -3,11 +3,13 @@ require 'netstat24'
 describe Netstat24 do
 
   before(:all) do
-    @netstat24 = Netstat24.new('1064', '9aaf83741f7b11aeefbe224464ef9dd212a9a897', 3465564)
+    app_id = 1064
+    secret = '9aaf83741f7b11aeefbe224464ef9dd212a9a897'
+    @netstat24 = Netstat24.new(app_id, secret, 3465564)
   end
 
   it "should return app_id" do
-    @netstat24.app_id.should == '1064'
+    @netstat24.app_id.should == 1064
   end
 
   it "should return ok on visit by some user" do
