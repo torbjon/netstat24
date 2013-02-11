@@ -24,6 +24,11 @@ class Netstat24
     response
   end
 
+  def track_event(event)
+    event = event.gsub(" ", "")
+    send({method: 'track_event', event: event})
+  end
+
   def visit
     send({method: 'visit'})
   end

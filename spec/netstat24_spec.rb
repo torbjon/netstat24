@@ -12,6 +12,10 @@ describe Netstat24 do
     @netstat24.app_id.should == 1064
   end
 
+  it "should track_event" do
+    @netstat24.track_event('SomeEvent').should == {"ok"=>"ok"}
+  end
+
   it "should return ok on visit by some user" do
     @netstat24.visit().should == {"ok"=>"ok"}
   end
