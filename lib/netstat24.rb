@@ -25,12 +25,42 @@ class Netstat24
     send({method: 'track_event', event: event})
   end
 
+  def track_value(event, value)
+    event = event.gsub(" ", "")
+    send({method: 'track_value', event: event, value: value})
+  end
+
+  def track_number(event, value)
+    event = event.gsub(" ", "")
+    send({method: 'track_number', event: event, value: value})
+  end
+
+  def revenue(value)
+    send({method: 'revenue', value: value})
+  end
+
   def visit
     send({method: 'visit'})
   end
 
+  def install(value)
+    send({method: 'install', value: value})
+  end
+
   def userData(age, sex, friends, app_friends, level)
     send({method: 'user_data', age: age, gender: sex, nfr: friends, nafr: app_friends, lvl: level})
+  end
+
+  def ad_click(value)
+    send({method: 'ad_click', value: value})
+  end
+
+  def invite_sent
+    send({method: 'invite_sent'})
+  end
+
+  def invite_response
+    send({method: 'invite_response'})
   end
 
 end
