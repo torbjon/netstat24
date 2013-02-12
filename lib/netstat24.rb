@@ -47,7 +47,7 @@ class Netstat24
     send({method: 'install', value: value})
   end
 
-  def userData(age, sex, friends, app_friends, level)
+  def user_data(age, sex, friends, app_friends, level)
     send({method: 'user_data', age: age, gender: sex, nfr: friends, nafr: app_friends, lvl: level})
   end
 

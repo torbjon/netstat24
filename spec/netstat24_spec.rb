@@ -37,7 +37,7 @@ describe Netstat24 do
   end
 
   it "should run user_data" do
-    @netstat24.userData(23, 'f', 154, 37, 75).should == {"ok"=>"ok"}
+    @netstat24.user_data(23, 'f', 154, 37, 75).should == {"ok"=>"ok"}
   end
 
   it "should run ad_click" do
