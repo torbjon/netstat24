@@ -36,6 +36,10 @@ describe Netstat24 do
     @netstat24.install('ad').should == {"ok"=>"ok"}
   end
 
+  it "should run install without value" do
+    @netstat24.install().should == {"ok"=>"ok"}
+  end
+
   it "should run user_data" do
     @netstat24.user_data(23, 'f', 154, 37, 75).should == {"ok"=>"ok"}
   end

@@ -39,11 +39,11 @@ class Netstat24
     send({method: 'revenue', value: value})
   end
 
-  def visit
-    send({method: 'visit'})
+  def visit(value = nil)
+    send({method: 'visit', value: value})
   end
 
-  def install(value)
+  def install(value = nil)
     send({method: 'install', value: value})
   end
 
