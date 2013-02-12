@@ -1,7 +1,3 @@
-# 
-# Api documentation: http://netstat24.com/documentation/podklyuchenie_k_sisteme/collector_api
-# 
-
 require 'net/http'
 require 'uri'
 require 'json'
