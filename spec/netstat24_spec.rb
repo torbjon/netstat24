@@ -13,15 +13,15 @@ describe Netstat24 do
   end
 
   it "should run trackEvent" do
-    @netstat24.trackEvent('SomeEvent').should == {"ok"=>"ok"}
+    @netstat24.track_event('SomeEvent').should == {"ok"=>"ok"}
   end
 
   it "should run trackValue" do
-    @netstat24.trackValue('SomeEvent', 'SomeValue').should == {"ok"=>"ok"}
+    @netstat24.track_value('SomeEvent', 'SomeValue').should == {"ok"=>"ok"}
   end
 
   it "should run trackNumber" do
-    @netstat24.trackNumber('SomeEvent', 100).should == {"ok"=>"ok"}
+    @netstat24.track_number('SomeEvent', 100).should == {"ok"=>"ok"}
   end
 
   it "should run revenue" do
@@ -41,23 +41,23 @@ describe Netstat24 do
   end
 
   it "should run userData" do
-    @netstat24.userData(23, 'f', 154, 37, 75).should == {"ok"=>"ok"}
+    @netstat24.user_data(23, 'f', 154, 37, 75).should == {"ok"=>"ok"}
   end
 
   it "should run userData" do
-    @netstat24.userData(nil, nil, nil, nil, nil).should == {"ok"=>"ok"}
+    @netstat24.user_data(nil, nil, nil, nil, nil).should == {"ok"=>"ok"}
   end
 
   it "should run adClick" do
-    @netstat24.adClick('ad134').should == {"ok"=>"ok"}
+    @netstat24.ad_click('ad134').should == {"ok"=>"ok"}
   end
 
   it "should run inviteSent" do
-    @netstat24.inviteSent().should == {"ok"=>"ok"}
+    @netstat24.invite_sent().should == {"ok"=>"ok"}
   end
 
   it "should run inviteResponse" do
-    @netstat24.inviteResponse().should == {"ok"=>"ok"}
+    @netstat24.invite_response().should == {"ok"=>"ok"}
   end
 
 end
