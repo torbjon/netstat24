@@ -13,4 +13,4 @@ Ruby wrapper for the [Netstat24 API](http://netstat24.com/documentation/podklyuc
 
     client = Netstat24.new('app_id', 'access_token', 'user_id')
     client.visit
-    client.userData(20, 'f', 321, 123, 69)
+    client.user_data(20, 'f', 321, 123, 69)
